@@ -1,0 +1,30 @@
+input {
+    border: 1px solid #999;
+    background: #EEE;
+    padding: 4px 12px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+  }
+  
+  .styled-table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-bottom: 1em;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+  
+  .styled-table th {
+      background-color: #f2f2f2;
+  }
+  
+  .styled-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
