@@ -1,0 +1,7 @@
+{% extends 'home.html'%}
+{% block movies %}
+{% for movie in data%}
+{{movie.name}}
+{{movie.year}}<br>
+{% endfor %}
+{% endblock %}

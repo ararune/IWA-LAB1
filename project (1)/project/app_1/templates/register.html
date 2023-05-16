@@ -1,0 +1,8 @@
+{% extends 'home.html' %}
+{% block register%}
+<form method="POST">
+    {{form}}
+{% csrf_token %}
+<input type="submit" value="register">
+</form>
+{%endblock%}

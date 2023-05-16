@@ -1,0 +1,9 @@
+{% extends 'home.html'%}
+{% block directors %}
+{% for director in data%}
+<a href="{% url 'directordetails' director.id %}">{{director.firstname}}</a>
+<a href="{% url 'editdirector' director.id %}">edit</a>
+<a href="{% url 'confirmdeletion' director.id %}">delete</a>
+<br>
+{% endfor %}
+{% endblock %}
