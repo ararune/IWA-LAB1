@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+{% block tickets %}
+{% for ticket in data %}
+<hr>
+Broj sjedala: {{ticket.brojSjedala}} <br> 
+Korisnik: {{ticket.idKorisnik.username}} <br>
+Film: {{ticket.idProjekcija.imeFilma}} <br>
+<hr>
+{% endfor %}
+{% endblock %}

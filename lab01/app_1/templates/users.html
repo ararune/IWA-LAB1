@@ -1,0 +1,9 @@
+{% extends 'home.html' %}
+{% block users %}
+{% for user in data %}
+<hr>
+Ime korisnika: {{user.username}} <br> 
+Email: {{user.email}} <br>
+<hr>
+{% endfor %}
+{% endblock %}

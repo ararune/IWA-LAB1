@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+{% block movies %}
+{% for movie in data %}
+<hr>
+<a href="{% url 'movie' projekcija.id %}">Ime filma: {{movie.imeFilma}}</a> <br> 
+Vrijeme: {{movie.vrijemeFilma}} <br>
+Slobodno mjesta: {{movie.kapacitetDvorane}} <br>
+<hr>
+{% endfor %}
+{% endblock %}
